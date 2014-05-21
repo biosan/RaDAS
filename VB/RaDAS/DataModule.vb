@@ -5,6 +5,7 @@
     ' Data arrays
     Public timeCounts(numberOfIntervals) As Integer     '
     Public secs(numberOfIntervals) As Double            '
+    Public secs_sum(numberOfIntervals) As Double        '
     Public lenghts(numberOfIntervals) As Double         '
     Public velocities(numberOfIntervals) As Double      '
 

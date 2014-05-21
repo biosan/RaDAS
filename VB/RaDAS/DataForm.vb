@@ -22,7 +22,8 @@ Public Class DataForm
         For i = 1 To numberOfIntervals
             timeCounts(i) = Val(tempData(i))
             If timeCounts(i) > 0 Then
-                secs(i) = timeCounts(i) / 1536
+                secs(i) = timeCounts(i) / 15625
+                secs_sum(i) = secs(i) + secs_sum(i - 1)
             End If
         Next
         writeData()

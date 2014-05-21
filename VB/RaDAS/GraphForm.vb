@@ -17,7 +17,7 @@
         End With
 
         For i = 1 To numberOfIntervals
-            dataTable.Rows.Add({secs(i), velocities(i)})
+            dataTable.Rows.Add({secs_sum(i), velocities(i)})
         Next
 
         Chart1.Series.Clear()
